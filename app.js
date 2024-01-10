@@ -1,6 +1,6 @@
 // Your function
 function fetchJoke() {
-    let fetchRes = fetch("https://v2.jokeapi.dev/joke/Any");
+    let fetchRes = fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,sexist,political"); // Fetch data from the API while making sure not to get any sexist, racist, or political jokes.
 
     fetchRes
     .then(res => res.json())
